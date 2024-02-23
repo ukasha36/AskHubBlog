@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ 
+    font-family: 'Gowun Dodum', sans-serif;
+    
+
+}
+:root{
+   
+    --primaryColor:#ffffff;
+    --secondaryColor:#eff1f8;
+    --bg-color:#f1f1f1;
+    --btn-color:#265ef8;
+    --text-color:#707070;
+    --black:#d122d1b6;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+.main{
+    background-color:var(--bg-color);
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.heading h1{
+ padding: 1rem;
+ text-align: center;
+ font-size: 4rem;
+}
+.heading h2{
+    text-align: center;
+    font-size: 2.5rem;
+    padding-bottom:2.5rem ;
+}
+.form div {
+    width: 50rem;
+}
+.form div label{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.form .forpass{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.show-password{
+    position: relative;
+    /* display: flex; */
+}
+.show-password i{
+    position: absolute;
+    right: 1.5rem;
+    top: 2rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+.show-password i:hover{
+    color:var(--black);
+}
+.form .forpass a{
+    text-decoration: none;
+    color: var(--btn-color);
+    
+}
+.form .forpass a:hover{
+    color: black;
+}
+.form div input{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0rem;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+
+}
+.formbtn{
+    display: flex;
+    flex-direction: column;
+    height: 15rem;
+    justify-content: space-between;
+}
+#signupBtn{
+    background-color: #b14f4f;
+    color: var(--primaryColor);
+    width: 20rem;
+    font-size: 1.1rem;
+    padding: 0.7rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+    
+}
+ 
+.form div button:hover{
+    color: var(--black);
+}
+ #signupBtnGoogle{
+    background-color: #b14f4f;
+    color: var(--primaryColor);
+    width: 20rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;
+    outline: none;
+    border: none;
+    border-radius: 0.7rem;
+    cursor: pointer;
+}
+ 
+.register-link{
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 2rem 0rem;
+    text-decoration: none;
+    
+} 
+.register-link a {
+    text-decoration: none;
+    
+} 
+.here{
+   
+    color: black;
+}
+.register-link a span:hover{
+    color: #707070;
+}
+.emailErr{
+    color:yellow;
+    margin-bottom:0.7rem ;
+    font-size: 1.3rem;
+    display: none;
+}
+.passErr{
+    color:yellow;
+    margin-bottom:0.7rem ;
+    font-size: 1.3rem;
+    display: none;
+}
+
+
+@media only screen and (max-width:640px){
+    .main{
+        background-color:var(--bg-color);
+        padding: 4rem 2rem;
+        width: 100vw;
+        height: 100vh;
+    }
+    .heading h1 {
+      padding: 1rem 0.4rem;
+      font-size: 3.8rem;
+    }
+    .heading h2{
+        font-size: 2rem;
+    }
+    .form div {
+        width: 100%;
+        padding: 1rem 0rem;
+    }  
+    .show-password i{
+        position: absolute;
+        right: 1.5rem;
+        top: 3rem;
+        font-size: 1.3rem;
+        cursor: pointer;
+    } 
+    
+}
+body{
+    display: flex;
+    justify-content:center ;
+    height: 100vh;
+    align-items: center;
+     background-color: #252422;
+}
+.main-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 30vw;
+    width: 39rem;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    align-items: center;
+     background-color: #eb5e28;
+
+}
+.logo{
+    height: 25%;
+    font-family:  monospace;
+    font-size: x-large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.inputs{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+
+    height: 50%;
+}
+.inputs input{
+    padding: 0.4rem 0.3rem 0.4rem 0.3rem;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+    margin-bottom: 0.8rem;
+    outline: none;
+    background-color: #eb5e28;
+    color: white;
+    font-family:  monospace;
+    font-size: 0.9rem;
+
+}
+.inputs label{
+    margin-bottom: 0.5rem;
+    font-family:  monospace;
+    font-size: 1rem;
+
+}
+.inputs input:hover{
+    border : transparent;
+}
+.button{
+    height: 20%;
+        /* width: 20%; */
+}
+.button button{
+    padding: 0.4rem 1.8rem 0.4rem 1.8rem;
+    background-color: #403d39;
+    color: white;
+    border-radius: 4px;
+    font-family:  monospace;
+    cursor: pointer;
+}
+.inputpass{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+.show{
+    position: absolute;
+    font-family:  monospace;
+    right: 0rem;
+    bottom: 2rem ;
+    background-color: #eb5e28;
+    border:transparent;
+    cursor: pointer;
+    color: white;
+}
+.hidden{
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 80vw;
+        height: 90vw;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        align-items: center;
+        background-color: #eb5e28;
+    }
+  }
+  @media only screen and (min-width: 600px) and (max-width: 950px) {
+    .inputpass{
+        display: flex;
+        flex-direction: column;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 70vw;
+        height: 40vw;
+        border: 2px solid transparent;
+        border-radius: 4px;
+        align-items: center;
+        background-color: #eb5e28;
+    } 
+    .show {
+        position: absolute;
+        right: 10px;
+        top: 20px;
+        font-family: monospace;
+        background-color: #eb5e28;
+        border: transparent;
+        cursor: pointer;
+        color: white;
+    }
+  }
